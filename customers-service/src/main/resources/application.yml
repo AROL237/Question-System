@@ -3,7 +3,7 @@ spring:
     name: customer-service
   datasource:
     username: root
-    password: Nzonkem@237
+    password: testDB
     url: jdbc:mysql://localhost:3306/customer_service
   jpa:
     show-sql: true
