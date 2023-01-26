@@ -12,5 +12,11 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  profiles:
+    active: customer
 server:
   port: 8081
+my:
+  app:
+    secret: "arollito123"
+    token_duration: 60

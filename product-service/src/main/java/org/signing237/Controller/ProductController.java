@@ -1,11 +1,9 @@
 package org.signing237.Controller;
 
 import org.signing237.Exceptions.NotFoundException;
-import org.signing237.Model.Product;
+import org.signing237.Model.Products;
 import org.signing237.Service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -29,17 +27,27 @@ public class ProductController {
         return ResponseEntity.ok(uploadFile);
     }
 
-    @GetMapping("/{size}/{page}")
+    @GetMapping
     public ResponseEntity<?> getProducts(
-            @PathVariable int size,
-            @PathVariable int page
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(defaultValue = "0") int page
             ){
          return  ResponseEntity.status(HttpStatus.OK).body(myService.getPapers(size, page));
     }
     @GetMapping("/{id}")
     public ResponseEntity<?> getAProduct (@PathVariable("id") UUID uuid) throws NotFoundException{
-       Product product=  myService.getAPaper(uuid);
-       return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.valueOf(product.getType())).body(product.getFile());
+       Products products =  myService.getAPaper(uuid);
+       return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.valueOf(products.getType())).body(products.getFile());
 
+    }
+
+    @PostMapping("{uuid}/solution")
+    public ResponseEntity<?> addSolutionToPaper(
+            @RequestParam("file") MultipartFile file,
+            @PathVariable UUID uuid
+            ){
+       String result = myService.addSolutionToPaper(uuid,file);
+
+       return ResponseEntity.ok(result);
     }
 }

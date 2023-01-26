@@ -4,50 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316d7f4-41f9-4a66-8c87-3da177b616f1" name="Changes" comment="project init&#10;first commit project initialisation&#10;- one service created and its configuration set-up to be a spring boot application.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Controller/CustomerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/CustomerLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/CustomerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Customers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Repository/CustomersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Repository/RolesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Service/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers-service/src/test/java/org/signing237/Controller/CustomerApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/ControllerAdvice/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Dto/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Exceptions/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Service/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="4316d7f4-41f9-4a66-8c87-3da177b616f1" name="Changes" comment="CustomerService&#10;  in this application service, in basically &#10;- implement some api endpoints specifically an endpoint to register a new customer in the system.&#10;-  associated with a couple of methods and classes to perform the function.&#10;&#10;well there is also the introduction of a new service called Product-service &#10;   in this service, i &#10;   - created a couple of packages and classes &#10;   - created an endpoint to add a product(file) to the system and saving to database&#10;   - also an endpoint to query a single product(paper) from the db&#10;   - also some exception where handle and some custom exceptions return.">
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Security/Filters/CustomOncePerRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Security/Filters/CustomUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Security/SecurityConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Model/Solutions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d07e51d-4e24-40d7-ac50-497322e78d20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d07e51d-4e24-40d7-ac50-497322e78d20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8afd3722-69d5-4add-9a8f-315c4768a894.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8afd3722-69d5-4add-9a8f-315c4768a894.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customers-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Controller/CustomerApi.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/CustomerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/DTO/CustomerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Model/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Repository/CustomersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Repository/CustomersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/Service/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers-service/src/test/java/org/signing237/Controller/CustomerApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customers-service/src/test/java/org/signing237/Controller/CustomerControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Dto/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Dto/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Model/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/Service/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/signing237/ServiceImp/MyServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +58,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24-sources.jar!/lombok/Data.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/6.0.0/spring-security-web-6.0.0-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -74,7 +79,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -82,6 +87,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2K7C6eGc1ryt776ylCZw1nTLYfR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -91,35 +99,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Question_Stack_System FINAL/Question-Stack-System/customers-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b42212e9464bf60886ae62d22653992f&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.signing237.Utils" />
+      <recent name="org.signing237.Security.Filters" />
+      <recent name="org.signing237.Security.AuthProvider" />
       <recent name="org.signing237.Exceptions" />
       <recent name="org.signing237.Service" />
-      <recent name="org.signing237.Model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -135,8 +148,21 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductService">
-    <configuration name="CustomerApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.CustomerService">
+    <configuration name="CreatePDFA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.pdfbox.examples.pdmodel.CreatePDFA" />
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.pdfbox.examples.pdmodel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customers-service" />
       <extension name="coverage">
         <pattern>
@@ -145,13 +171,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.signing237.Controller" />
-      <option name="MAIN_CLASS_NAME" value="org.signing237.Controller.CustomerApiTest" />
+      <option name="MAIN_CLASS_NAME" value="org.signing237.Controller.CustomerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerApiTest.saveCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.saveCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customers-service" />
       <extension name="coverage">
         <pattern>
@@ -160,7 +186,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.signing237.Controller" />
-      <option name="MAIN_CLASS_NAME" value="org.signing237.Controller.CustomerApiTest" />
+      <option name="MAIN_CLASS_NAME" value="org.signing237.Controller.CustomerControllerTest" />
       <option name="METHOD_NAME" value="saveCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -196,9 +222,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ProductService" />
-        <item itemvalue="JUnit.CustomerApiTest.saveCustomer" />
         <item itemvalue="Spring Boot.CustomerService" />
-        <item itemvalue="JUnit.CustomerApiTest" />
+        <item itemvalue="JUnit.CustomerControllerTest.saveCustomer" />
+        <item itemvalue="JUnit.CustomerControllerTest" />
+        <item itemvalue="Application.CreatePDFA" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +237,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673316077660</updated>
-      <workItem from="1673316090686" duration="35071000" />
+      <workItem from="1673316090686" duration="37481000" />
+      <workItem from="1673462688266" duration="5193000" />
+      <workItem from="1673642063555" duration="22343000" />
+      <workItem from="1673749218026" duration="18745000" />
+      <workItem from="1673808467644" duration="4194000" />
+      <workItem from="1673904176007" duration="25262000" />
+      <workItem from="1674034920113" duration="6612000" />
+      <workItem from="1674068304872" duration="35278000" />
+      <workItem from="1674103926815" duration="3960000" />
+      <workItem from="1674108935404" duration="2687000" />
+      <workItem from="1674157475668" duration="3495000" />
+      <workItem from="1674177366815" duration="183000" />
+      <workItem from="1674691839508" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="project init&#10;first commit project initialisation&#10;- one service created and its configuration set-up to be a spring boot application.">
       <created>1673317420001</created>
@@ -219,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673317420001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CustomerService&#10;  in this application service, in basically &#10;- implement some api endpoints specifically an endpoint to register a new customer in the system.&#10;-  associated with a couple of methods and classes to perform the function.&#10;&#10;well there is also the introduction of a new service called Product-service &#10;   in this service, i &#10;   - created a couple of packages and classes &#10;   - created an endpoint to add a product(file) to the system and saving to database&#10;   - also an endpoint to query a single product(paper) from the db&#10;   - also some exception where handle and some custom exceptions return.">
+      <created>1673394326268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673394326268</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CustomerService&#10;  in this application service, in basically &#10;- implement some api endpoints specifically an endpoint to register a new customer in the system.&#10;-  associated with a couple of methods and classes to perform the function.&#10;&#10;well there is also the introduction of a new service called Product-service &#10;   in this service, i &#10;   - created a couple of packages and classes &#10;   - created an endpoint to add a product(file) to the system and saving to database&#10;   - also an endpoint to query a single product(paper) from the db&#10;   - also some exception where handle and some custom exceptions return.">
+      <created>1673394393612</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673394393612</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +292,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="project init&#10;first commit project initialisation&#10;- one service created and its configuration set-up to be a spring boot application." />
-    <option name="LAST_COMMIT_MESSAGE" value="project init&#10;first commit project initialisation&#10;- one service created and its configuration set-up to be a spring boot application." />
+    <MESSAGE value="CustomerService&#10;  in this application service, in basically &#10;- implement some api endpoints specifically an endpoint to register a new customer in the system.&#10;-  associated with a couple of methods and classes to perform the function.&#10;&#10;well there is also the introduction of a new service called Product-service &#10;   in this service, i &#10;   - created a couple of packages and classes &#10;   - created an endpoint to add a product(file) to the system and saving to database&#10;   - also an endpoint to query a single product(paper) from the db&#10;   - also some exception where handle and some custom exceptions return." />
+    <option name="LAST_COMMIT_MESSAGE" value="CustomerService&#10;  in this application service, in basically &#10;- implement some api endpoints specifically an endpoint to register a new customer in the system.&#10;-  associated with a couple of methods and classes to perform the function.&#10;&#10;well there is also the introduction of a new service called Product-service &#10;   in this service, i &#10;   - created a couple of packages and classes &#10;   - created an endpoint to add a product(file) to the system and saving to database&#10;   - also an endpoint to query a single product(paper) from the db&#10;   - also some exception where handle and some custom exceptions return." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

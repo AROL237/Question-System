@@ -1,27 +1,26 @@
 package org.signing237;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
+@Slf4j
 public class CustomerService {
-//            @Autowired
-//
 
     public static void main(String[] args) {
         SpringApplication.run(CustomerService.class,args);
     }
 
-    /*
-    - code to initialise the role table in database.
-     */
+    @Bean
+    public PasswordEncoder passwordEncoder(){
 
-//    @Bean
-//    CommandLineRunner commandLineRunner(){
-//        return args -> {
-//            rolesRepository.save(Roles.builder().name(Role.USER.toString()).build());
-//            rolesRepository.save(Roles.builder().name(Role.ADMIN.toString()).build());
-//            rolesRepository.save(Roles.builder().name(Role.SUPER_ADMIN.toString()).build());
-//        };
-//    }
+        return new BCryptPasswordEncoder();
+    }
+
+
+
 }

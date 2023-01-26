@@ -1,8 +1,8 @@
 package org.signing237.Service;
 
+import org.signing237.Dto.ResponseDto;
 import org.signing237.Exceptions.NotFoundException;
-import org.signing237.Model.Product;
-import org.springframework.data.domain.Page;
+import org.signing237.Model.Products;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -12,7 +12,9 @@ public interface MyService {
 
     String saveProduct(MultipartFile file) throws IOException;
 
-    Page getPapers(int size, int page);
+    ResponseDto getPapers(int size, int page);
 
-    Product getAPaper(UUID uuid) throws  NotFoundException;
+    Products getAPaper(UUID uuid) throws  NotFoundException;
+
+    String addSolutionToPaper(UUID uuid, MultipartFile file);
 }

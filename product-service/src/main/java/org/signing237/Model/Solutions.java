@@ -5,13 +5,14 @@ import lombok.*;
 
 import java.util.UUID;
 
+@Getter
+@Setter
 @Builder
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "questions")
-public class Product {
+@Table(name = "solutions")
+public class Solutions {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID uuid;
@@ -22,6 +23,6 @@ public class Product {
     @Column(nullable = false)
     private String type;
     @Column(nullable = false)
-    @Lob
+    @Lob()
     private byte[] file;
 }
